@@ -16,7 +16,9 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
+  <ItemGroup>
+    <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1"/>
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TestingDemo\TestingDemo.csproj" />
   </ItemGroup>
