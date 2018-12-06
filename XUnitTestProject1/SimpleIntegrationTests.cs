@@ -1,3 +1,4 @@
+using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Testing;
@@ -7,7 +8,8 @@ using Xunit;
 
 namespace XUnitTestProject1
 {
-    public class SimpleIntegrationTests : IClassFixture<WebApplicationFactory<Startup>>
+    public class SimpleIntegrationTests : 
+        IClassFixture<WebApplicationFactory<Startup>>, IDisposable
     {
         private readonly WebApplicationFactory<Startup> _factory;
         private readonly HttpClient _client;
