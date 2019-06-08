@@ -23,7 +23,7 @@ namespace XUnitTestProject1
         public void Dispose()
         {
             _client.Dispose();
-            _factory.Dispose();
+            //_factory.Dispose();
         }
 
         [Theory]
